@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dana Wing 8-1044-2114">
+    <meta name="description" content="página de reproducción de video similar a YouTube: encabezado con navegación y buscador, reproductor de video con información e interacción con el canal, sección de comentarios, panel lateral de videos sugeridos y pie de página.">
+    <title>Introducción a HTML5 y Semántica Web - MiTube</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+ </head>
+ <body>
+    <header>
+
+        <a href="#">
+            <img src="https://i.ytimg.com/vi/XOTZF13M9qU/maxresdefault.jpg" alt="Logo de MiTube" width="120"> 
+        </a>
+
+        <form action="#" role="search">
+            <input type="search" name="q" placeholder="Buscar" required>
+            <button type="submit" class="btn">Buscar</button>  
+        </form>
+        <nav class="navbar">
+            <ul>
+                <li><a class="nav-link" href="#">Inicio</a></li>
+                <li><a class="nav-link" href="#">Suscripciones</a></li>
+                <li><a class="nav-link" href="#">Mi biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="video-player"> 
+
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/XOTZF13M9qU" title="[Minecraft] 🌼💖 Aesthetic House Tutorial / Cottagecore / Mizuno&#39;s 16 Craft Resource Pack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1> tutorial de casa Aesthetic en Minecraft</h1>
+            <p>
+                <span>732 K vistas </span> • <time datetime="2026-08-20">20 de agosto del 2026</time>
+            </p>
+
+            <div>
+                <img src="https://i.pinimg.com/236x/93/3e/26/933e2620c0bf910cda1bc6ca9437c3f8.jpg" alt="Avatar del canal" width="48">
+                <span>Canal de construccion en Minecraft</span>
+                <button type="button" class="btn">Suscribirse</button>
+            </div>
+
+             <p> construccion paso a paso Aesthetic de casa en minecraft 
+                con estilo cute y estilo soft y facil de realizar para una buena relajacion 
+            </p>
+            
+        </section>
+
+        <section>
+            <h2>Comentarios</h2>
+
+            
+            <form action="#">
+                <label for="comentario">Escribe un comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="3" placeholder="Agrega un comentario publico... " required></textarea><br>
+                <button type="submit" class="btn">Comentar</button>
+            </form>
+
+            <br>
+
+           
+            <article>
+                <img src="https://laby.net/api/v3/render/skin/d42241adbf4ee321339d64e95a923a83.png?height=350&width=350" alt="Avatar de Carlos Gómez" width="40">
+                <p><strong>Carlos Gómez</strong> • <time datetime="2026-09-01">Hace 1 semana</time></p>
+                <p>¡Excelente explicación! Me ayudó mucho a reaizar mi primera casa.</p>
+            </article>
+
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfTDtHmfUl3U3YFY-RyfIZeHtIp5PY5OZetWizCzvsUQ&s=10" alt="Avatar de Mario Rodríguez" width="40">
+                <p><strong>María Rodríguez</strong> • <time datetime="2026-09-03">Hace 5 días</time></p>
+                <p>Muy claro todo. ¿Habrá una segunda?</p>
+            </article>
+
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1DwryfwXihuG-mIOeD6kBIMkmYi8uy22mXHnbR-nXmw&s=10" alt="Avatar de Juana Pérez" width="40">
+                <p><strong>Juan Pérez</strong> • <time datetime="2026-09-07">Hace 2 días</time></p>
+                <p>El mejor tutorial que he visto hasta ahora.</p>
+            </article>
+        </section>
+
+    </main>
+    <aside id="sugeridos">
+        <h2>Videos sugeridos</h2>
+
+        <article class="card">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/MbpEpQnMViU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAHq-GiCQRbBfT6kw4oorAFYsq8Aw" alt="Miniatura de Curso de casa" width="168">
+            </a>
+            <h3><a href="#">casa campestre minecraft</a></h3>
+            <p>canar creativo</p>
+        </article>
+
+        <article class="card">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/oXcSgAvdZYE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDSL3-zvLK-oRfv1FcIQPGTSPKcxQ" alt="Miniatura de casa barbie " width="168">
+            </a>
+            <h3><a href="#">casa barbie </a></h3>
+            <p>cute canal</p>
+        </article>
+
+        <article class="card">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/TxEKfGz3pAQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAE2DMQbX8gkzgoEUw-okzuqhNfcA" alt="Miniatura de todo lo que construido " width="168">
+            </a>
+            <h3><a href="#">todo lo que he echo</a></h3>
+            <p>minecraft profesional</p>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/e4x5du87qGQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB6p7qP81hdSpLgKs-XhXGzgNRVlg" alt="Miniatura de casa del arbol" width="168">
+            </a>
+            <h3><a href="#">minecraft houses</a></h3>
+            <p> Tutorials</p>
+        </article>
+    </aside>
+
+   
+    <footer id="pie">
+        <ul>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Privacidad</a></li>
+        </ul>
+        <p>&copy; 2026 MiTube</p>
+    </footer>
+ </body>
+</html>
